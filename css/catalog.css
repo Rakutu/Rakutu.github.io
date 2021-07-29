@@ -53,6 +53,7 @@
 
 .ui-state-active .catalog__nav-item-link {
   box-shadow:  0 0 0 6px #fff, 0 0 0 8px var(--main);
+  outline: none;
 }
 
 .france {
