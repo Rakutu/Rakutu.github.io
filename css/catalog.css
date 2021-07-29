@@ -39,8 +39,8 @@
   transition-timing-function: linear;
 }
 
-.catalog__nav-item:focus,
-.catalog__nav-item-link:focus {
+.catalog__nav-item:focus:not(:hover):not(:active),
+.catalog__nav-item-link:focus:not(:hover):not(:active) {
   outline: var(--outline);
 }
 
