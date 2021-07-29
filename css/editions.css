@@ -1,0 +1,510 @@
+.editions {
+  min-height: 763px;
+  padding-top: 79px;
+  padding-bottom: 73px;
+  background-image: url('../img/editions-img/birmingham-museums-trust-MK_98NuC4-4-unsplash\ 4.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.editions__content {
+  display: flex;
+}
+
+.editions__aside {
+  max-width: 277px;
+  margin-right: 10.8%;
+}
+
+.editions__check-content {
+  margin-bottom: 36px;
+}
+
+.editions__haeding {
+  color: #fff;
+  margin-bottom: 23px;
+}
+
+.editions__check-heading {
+  display: inline-block;
+  margin-bottom: 14px;
+  color: #fff;
+}
+
+.editions__check-item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.editions__check-box {
+  cursor: pointer;
+  color: #fff;
+  transition: color .2s ease-in-out;
+}
+
+.editions__check {
+  width: 1px;
+  height: 1px;
+  z-index: -1;
+  opacity: 0;
+}
+
+.editions__check + span {
+  transition: color .2s ease-in-out;
+}
+
+.editions__check:focus:not(:hover) + span:before {
+  border-color: var(--main);
+}
+
+.editions__check:focus:not(:hover) + span{
+  color: var(--main);
+}
+
+.editions__check + span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.editions__check + span:before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  margin-right: 12px;
+  border: 1px solid #fff;
+  transition: border-color .2s ease-in-out;
+}
+
+.editions__check:checked + span:before {
+  background-image: url("data:image/svg+xml,%3Csvg width='4' height='4' viewBox='0 0 4 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='2' fill='%23C283F3'/%3E%3C/svg%3E");
+  border: 1px solid var(--main);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.editions__check-box:hover {
+  color: var(--main);
+}
+
+.editions__check-box:hover .editions__check + span:before {
+  border-color: var(--main);
+}
+
+.editions__check-box:active {
+  color: var(--two);
+}
+
+.editions__check-box:active .editions__check + span:before {
+  border-color: var(--two);
+}
+
+.editions__price-block {
+  width: 277px;
+  height: 40px;
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+.editions__price-block input {
+  outline: none;
+  transition: background-color .2s ease-in-out;
+}
+
+.editions__price-block:hover input {
+  background-color: var(--main);
+}
+
+.editions__price-block input:focus {
+  background-color: var(--main);
+  outline: 1px solid #fff;
+}
+
+.editions__price-heading {
+  margin-bottom: 15px;
+}
+
+.edition-input {
+  width: 73px;
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+  background-color: rgba(157, 92, 208, 0.5);;
+  border: none;
+  border-radius: 0;
+  box-sizing:border-box;
+}
+
+.edition-input::-webkit-input-placeholder {
+  color: #fff;
+}
+.edition-input::-moz-placeholder {
+  color: #fff;
+}
+.edition-input:-ms-input-placeholder {
+  color: #fff;
+}
+.edition-input::-ms-input-placeholder {
+  color: #fff;
+}
+.edition-input::placeholder {
+  color: #fff;
+}
+
+.edition-price-settings {
+  padding: 9px;
+  color: #fff;
+}
+
+.editions__price-text-left,
+.editions__price-text-right {
+  width: 36px;
+}
+
+.editions__swiper-container {
+  width: 75%;
+  height: 100%;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.editions__swiper-nav {
+  margin: 0 0 15px 0;
+}
+
+.editions__swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.editions__swiper-card {
+  width: 100%;
+  height: auto;
+}
+
+.editions__swiper-card-img {
+  margin-bottom: 22px;
+  width: 100%;
+  height: auto;
+}
+
+.editions__swiper-desc-block {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  max-width: 100%;
+}
+
+.editions__swiper-desc {
+  line-height: 20px;
+}
+
+.editions__swiper-desc strong {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.editions__swiper-price {
+  padding: 0 2px 0 5px;
+  white-space: nowrap;
+}
+
+.editions__swiper-btn {
+  margin: 4px;
+  padding: 4px 18px 8px;
+  min-height: 24px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid var(--main);
+  border-radius: 20px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  /* transition: background-color .2s ease-in-out; */
+  transition-property: background-color, border, box-shadow;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+}
+
+.editions__swiper-btn:hover {
+  background-color: var(--main);
+}
+
+.editions__swiper-btn:focus:not(:hover) {
+  outline: none;
+  box-shadow: 0 0 0 2px #333, 0 0 0 3px var(--main);
+}
+
+.editions__swiper-btn:active {
+  background-color: var(--two);
+  border: 1px solid #D1A9F0;
+}
+
+
+.editions__check-content--mobile {
+  display: none;
+  margin-bottom: 30px;
+}
+
+.editions__check-heading--mobile {
+  width: 100%;
+  display: flex;
+  padding: 10px 0;
+  margin-bottom: -1px;
+  text-align: left;
+  color: #fff;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.editions__check-heading--mobile::after {
+  content: '';
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 1L6 6L0.999998 1' stroke='white'/%3E%3C/svg%3E");
+}
+
+.editions__check-item--mobile {
+  margin-top: -1px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* .editions__check-item--mobile:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+} */
+
+.editions__check-box--mobile {
+  display: flex;
+  padding: 10px 0;
+  color: var(--main);
+}
+
+.editions__check-item--mobile:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.editions__check-box--mobile::after {
+  content: "";
+  margin-left: auto;
+  width: 20px;
+  height: 20px;
+  background-position: center center;
+  transition: transform .3s ease;
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='12' viewBox='0 0 13 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.501981 11.4789L11.502 0.000216305L12.002 0.521973L1.00198 12.0006L0.501981 11.4789Z' fill='%23C283F3'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0.500026 9.03416e-05L11.5 11.4787L11 12.0005L2.74963e-05 0.521847L0.500026 9.03416e-05Z' fill='%23C283F3'/%3E%3C/svg%3E");  background-repeat: no-repeat;
+}
+
+.editions__check-content-m {
+  display: none;
+}
+
+.editions__check-item-m {
+  margin-top: -1px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.editions__check-item-m:not(:last-child) {
+  margin-bottom: 0;
+}
+
+.editions__check-box-m {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0;
+}
+
+.editions__check-heading--mobile:hover .editions__check-box--mobile::after {
+  transform: rotate(180deg);
+}
+
+
+
+@media (max-width:1200px) {
+  .editions__aside {
+    margin-right: 1.948%;
+  }
+
+  .editions__swiper-card-img {
+    margin-bottom: 11px;
+  }
+
+  .editions__swiper-desc-block {
+    margin-bottom: 12px;
+  }
+}
+
+
+@media (max-width:992px) {
+  .editions {
+    background-image: url(../img/editions-img/editions-md.jpg);
+  }
+  
+  .editions__content {
+    flex-direction: column;
+  }
+
+  .editions__check-list {
+    columns: 3;
+  }
+
+  .editions__aside {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .editions__swiper-container {
+    width: 100%;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+  .editions__swiper-desc {
+    white-space: nowrap;
+    max-width: 70%;
+  }
+  .editions__swiper-desc strong {
+    white-space: nowrap;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: 815px) {
+
+  .editions {
+    padding-top: 84px;
+  }
+  .editions__check-list {
+    columns: 3;
+  }
+
+  .editions__check-item:nth-child(5),
+  .editions__check-item:nth-child(6),
+  .editions__check-item:nth-child(7),
+  .editions__check-item:nth-child(8) {
+    margin-left: -41px;
+  }
+
+  .editions__check-content {
+    margin-bottom: 27px;
+  }
+  .editions__swiper-nav {
+    margin-top: 18px;
+    margin-left: -23px;
+    margin-bottom: 12px;
+  }
+
+}
+
+@media (max-width: 691px) {
+  .editions {
+    background-image: url(../img/editions-img/editions-sm.jpg);
+    padding-top: 56px;
+    padding-bottom: 0;
+  }
+
+  .editions__haeding {
+    margin-bottom: 16px;
+  }
+
+  .editions__check-item:nth-child(5),
+  .editions__check-item:nth-child(6),
+  .editions__check-item:nth-child(7),
+  .editions__check-item:nth-child(8) {
+    margin-left: 0;
+  }
+
+  .editions__swiper-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    overflow: auto;
+  }
+
+  .editions__swiper-card {
+    width: 44.825%;
+    margin-bottom: 53px;
+  }
+
+  .editions__swiper-card:nth-child(odd) {
+    margin-right: 10.344%;
+  }
+
+  .editions__check-content{
+    margin-bottom: 0;
+  }
+
+  .editions__price-block {
+    margin-bottom: 50px;
+  }
+
+  .editions__swiper-container {
+    margin-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .editions__swiper-desc-block {
+    flex-direction: column;
+    min-width: 100%;
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .editions__swiper-card-img {
+    margin-bottom: 3px;
+    max-height: 294px;
+  }
+
+  .editions__swiper-desc {
+    line-height: 18px;
+  }
+  .editions__swiper-btn {
+    font-size: 12px;
+    width: 98.5%;
+    padding: 5px 0;
+    margin: 0;
+  }
+
+  .editions__swiper-price {
+    padding-left: 0;
+  }
+
+  .editions__swiper-nav {
+    display: none;
+  }
+  
+  .editions__check-content {
+    display: none;
+  }
+  .editions__check-content--mobile {
+    display: block;
+  }
+  .editions__check-item--mobile {
+    display: none;
+  }
+  
+  .editions__check-content-m {
+    display: block;
+  }
+
+  .editions__check-content--mobile {
+    margin-bottom: 22px;
+  }
+  
+  
+}
+
+.editions__check-item--mobile--active {
+  display: block;
+}

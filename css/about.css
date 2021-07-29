@@ -1,0 +1,40 @@
+.about {
+  width: 100%;
+  padding: 80px 0 70px 0;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.about__block {
+  width: 67.625%;
+}
+
+.about__heading {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 1024px) {
+  .about__block {
+    width: 100%;
+  }
+
+	.about__heading {
+		margin-bottom: 17px;
+	}
+}
+
+@media (max-width: 510px) {
+  .about {
+    padding-top: 57px;
+    padding-bottom: 41px;
+  }
+
+  .about__heading {
+    line-height: 27px;
+  }
+  
+  .about__desc {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}

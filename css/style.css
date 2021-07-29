@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+	--main: #9D5CD0;
+	--two: #7943A4;
+	--outline: 2px solid var(--main);
+}
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+	color: #333;
+	font-family: 'Open Sans';
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+h1, h2, h3, p {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; 
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+.container {
+	max-width: 1700px;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin: 0 auto;
+}
+
+.section-heading {
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 65px;
+}
+
+.section-desc {
+	line-height: 32px;
+}
+
+@media (max-width: 510px) {
+	.container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.section-heading {
+		font-size: 28px;
+		line-height: 27px;
+	}
+}
+
+input::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+input:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+input:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+
+/* SIMPLEBAR */
+
+.simplebar-scrollbar::before {
+	width: 2px;
+	left: 0;
+	border-radius: 0;
+	visibility: visible;
+  background-color: #fff ;
+	opacity: 1;
+}
+
+.simplebar-vertical {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	width: 2px !important;
+	background-color: #000;
+	visibility: visible !important;
+}
+
+.simplebar-track {
+	width: 2px;
+	margin-right: 19px;
+}
+
+.simplebar-track .simplebar-vertical {
+	width: 2px;
+}
+
+.simplebar-scrollbar.simplebar-visible:before {
+	opacity: 1;
+}
