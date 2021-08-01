@@ -82,18 +82,27 @@
   max-width: 30.827%;
   max-height: 150px;
   min-height: 150px;
-  border: 1px solid #cacaca;
+}
+
+.projects__item .focus-visible {
+  border: 1px solid var(--main);
+  outline: none;
 }
 
 .projects__item-link {
   display: flex;
   flex-basis: 100%;
+  border: 1px solid #cacaca;
 }
 
 .projects__card {
   margin: auto;
   filter: opacity(.7) grayscale(1);
   transition: filter .2s;
+}
+
+.projects__item-link:focus:not(:hover):not(:active) {
+  border: 1px solid var(--main);
 }
 .projects__item-link:hover .projects__card {
   filter: opacity(1) grayscale(0);
