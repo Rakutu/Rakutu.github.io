@@ -84,27 +84,14 @@
   min-height: 150px;
 }
 
-<<<<<<< HEAD
-.projects__item:focus-visible {
-  outline: none;
-=======
 .projects__item .focus-visible {
   outline: none !important;
->>>>>>> 7d13fcd50a8b1c24c65ab4a8dd3ff79800b32820
 }
 
 .projects__item-link {
   display: flex;
   flex-basis: 100%;
   border: 1px solid #cacaca;
-<<<<<<< HEAD
-}
-
-.projects__item-link:focus {
-  border: 1px solid var(--main);
-  outline: none;
-=======
->>>>>>> 7d13fcd50a8b1c24c65ab4a8dd3ff79800b32820
 }
 
 .projects__card {
@@ -214,7 +201,7 @@
     max-width: 90%;
   }
 
-.projects__item-link {
+  .projects__item-link {
     margin: auto;
     max-width: 67.5%;
     max-height: 65px;

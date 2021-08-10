@@ -441,7 +441,7 @@
   transition: opacity .3s ease-in-out;
 }
 
-.gallery__popup-btn::after {
+.gallery__popup-btn::before {
   content: "";
   position: absolute;
   top: 0;
@@ -470,6 +470,6 @@
   opacity: 1;
 }
 
-.gallery__swiper-image:active .gallery__popup-btn::after {
+.gallery__swiper-image:active .gallery__popup-btn::before {
   opacity: 1;
 }
